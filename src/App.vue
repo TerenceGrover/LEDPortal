@@ -5,7 +5,8 @@ import ConfettiExplosion from "vue-confetti-explosion";
 import { initializeApp } from "firebase/app";
 // forebase config from env
 
-const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG);
+const firebaseConfig = JSON.parse(process.env.firebaseConfig);
+
 
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
