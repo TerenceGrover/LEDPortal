@@ -6,7 +6,8 @@ import { initializeApp } from "firebase/app";
 // forebase config from env
 
 console.log('Environment variable:', import.meta.env);
-const firebaseConfig = JSON.parse(import.meta.env.firebaseConfig);
+const firebaseConfig = import.meta.env.firebaseConfig ? JSON.parse(import.meta.env.firebaseConfig) : null;
+
 
 
 const app = initializeApp(firebaseConfig);
