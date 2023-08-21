@@ -6,6 +6,7 @@ import { initializeApp } from "firebase/app";
 // forebase config from env
 
 const firebaseConfig = JSON.parse(process.env.firebaseConfig);
+console.log(firebaseConfig)
 
 
 const app = initializeApp(firebaseConfig);
